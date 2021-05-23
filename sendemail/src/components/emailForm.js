@@ -1,13 +1,13 @@
 import emaijs from "emailjs-com";
 import React from 'react';
 
-export default function emailForm() {
+export default function EmailSend() {
 
 
       function sendEmail(e) {
             e.preventDefault();
 
-            emailjs.sendForm('service_3hmhlvx', 'template_j57onor', e.target, 'user_xybrFSQSULyS71kBVHmzl')
+            emaijs.sendForm('service_3hmhlvx', 'template_j57onor', e.target, 'user_xybrFSQSULyS71kBVHmzl')
                   .then((result) => {
                         console.log(result.text);
                   }, (error) => {
