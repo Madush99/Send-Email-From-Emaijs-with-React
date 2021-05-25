@@ -18,6 +18,7 @@ export default function EmailSend() {
       return (
             <div>
                   <div className="container">
+                        <h1>Send Email Using Emailjs</h1>
                         <form onSubmit={sendEmail}>
                               <div className="row pt-5 mx-auto">
                                     <div className="col-8 form-group mx-auto">
