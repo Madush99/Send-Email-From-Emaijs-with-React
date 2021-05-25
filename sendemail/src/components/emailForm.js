@@ -7,7 +7,7 @@ export default function EmailSend() {
       function sendEmail(e) {
             e.preventDefault();
 
-            emaijs.sendForm('service_3hmhlvx', 'template_j57onor', e.target, 'user_xybrFSQSULyS71kBVHmzl')
+            emaijs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
                   .then((result) => {
                         console.log(result.text);
                   }, (error) => {
